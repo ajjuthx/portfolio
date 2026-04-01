@@ -82,6 +82,12 @@
     font-size: 1.15rem;
   }
 
+  #profile .title,
+  #profile .section__text__p1,
+  #profile .section__text__p2 {
+    text-align: center;
+  }
+
   .section__pic-container {
     width: 240px;
     height: 240px;
@@ -112,5 +118,26 @@
   footer {
     height: auto;
     padding-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  footer nav {
+    margin: 0;
+    justify-content: center;
+    height: auto;
+  }
+
+  footer .nav-links-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .nav-links {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
