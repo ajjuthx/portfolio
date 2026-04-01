@@ -72,6 +72,52 @@ nav {
   font-size: 1.2rem;
 }
 
+.cv-dropdown {
+  position: relative;
+}
+
+.cv-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 180px;
+  padding: 0.4rem;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease, transform 220ms ease;
+  z-index: 20;
+}
+
+.cv-dropdown:hover .cv-dropdown-menu {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+.cv-dropdown-menu li {
+  width: 100%;
+}
+
+.cv-dropdown-menu a {
+  display: block;
+  width: 100%;
+  font-size: 0.96rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.cv-dropdown-menu a:hover {
+  background: #edf3ff;
+  color: var(--primary);
+}
+
 a {
   color: var(--text);
   text-decoration: none;
